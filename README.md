@@ -1,3 +1,12 @@
+## Open Source Contributions
+
+**OpenVINO — Fixed a BMP buffer deallocation mismatch**
+
+Used AddressSanitizer to reproduce the error and traced the buffer from allocation to cleanup. Replaced `delete` with `std::free()` and verified the fix with the same input.
+
+- [Merged pull request #38735](https://github.com/openvinotoolkit/openvino/pull/38735)
+- [Reproduction and verification notes](https://github.com/Jadonkim14/open-source-contributions/tree/main/openvino/pr-38735)
+
 ## 💪 Skills
 
 **Platforms & Languages**
