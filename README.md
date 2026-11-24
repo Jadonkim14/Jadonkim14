@@ -1,4 +1,4 @@
-## Open Source Contributions
+## 🔀 Open Source Contributions
 
 **OpenVINO — Fixed a BMP buffer deallocation mismatch**
 
@@ -6,6 +6,18 @@ Used AddressSanitizer to reproduce the error and traced the buffer from allocati
 
 - [Merged pull request #38735](https://github.com/openvinotoolkit/openvino/pull/38735)
 - [Reproduction and verification notes](https://github.com/Jadonkim14/open-source-contributions/tree/main/openvino/pr-38735)
+
+## ⚙️ Projects
+
+**OpenVINO — CPU Inference Benchmark**
+
+Implemented asynchronous inference in C using the OpenVINO C API.
+Compared synchronous execution with 2, 4, and 8 asynchronous requests
+over 8 runs per configuration.
+
+Four asynchronous requests increased mean throughput by **11.90%**
+(620.49 → 694.31 images/s). All **20,000 Top-10 entries** matched
+the synchronous baseline for each async configuration.
 
 ## 💪 Skills
 
