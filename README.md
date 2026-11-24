@@ -1,3 +1,9 @@
+## 🌱 Introduce
+
+Hi, I’m Jaehyun 👋
+
+I want to build tools that save people from dealing with the same problem over and over.
+
 ## 🔀 Open Source Contributions
 
 **OpenVINO — Fixed a BMP buffer deallocation mismatch**
@@ -11,13 +17,9 @@ Used AddressSanitizer to reproduce the error and traced the buffer from allocati
 
 **OpenVINO — CPU Inference Benchmark**
 
-Implemented asynchronous inference in C using the OpenVINO C API.
-Compared synchronous execution with 2, 4, and 8 asynchronous requests
-over 8 runs per configuration.
+I implemented asynchronous CPU inference in C using the OpenVINO C API and compared synchronous execution with 2, 4, and 8 asynchronous requests, running each configuration 8 times. Four requests gave the highest mean throughput, up **11.90%** (620.49 → 694.31 images/s), and all **20,000 Top-10 entries** matched the synchronous baseline in each asynchronous configuration.
 
-Four asynchronous requests increased mean throughput by **11.90%**
-(620.49 → 694.31 images/s). All **20,000 Top-10 entries** matched
-the synchronous baseline for each async configuration.
+- [Benchmark notes and reproduction guide](https://github.com/Jadonkim14/image-runtime-project/blob/main/docs/cpu-inference-benchmark.md)
 
 ## 💪 Skills
 
